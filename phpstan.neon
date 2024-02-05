@@ -1,0 +1,11 @@
+services:
+    -
+        class: App\UuidStringTypeNodeResolverExtension
+        tags:
+            - phpstan.phpDoc.typeNodeResolverExtension
+parameters:
+    level: max
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - app
+        - tests
